@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee's layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <style>
+    body {
+        background-color: whitesmoke;
+    }
+
+
+    #grid-container {
+        width: 75%;
+        margin: auto;
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 160px);
+        gap: 30px;
+    }
+
+    .cards {
+        border-radius: 15px;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .cards:hover {
+        transform: scale(1.1);
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bold {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #000000;
+        margin: 0;
+    }
+
+    .color {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #E8AA42;
+        margin: 0;
+    }
+
+    .para {
+        font-size: 16px;
+        font-family: 'Noto Sans', sans-serif;
+        color: #544D4F;
+        
+    }
+
+    @media all and (min-width:660px ) and (max-width: 980px) {
+        
+    #grid-container {
+        width: 85%;
+        margin: auto;
+        margin-top: 80px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 160px);
+
+    }
+
+  }
+
+    @media all and (min-width: 360px) and (max-width: 659px ) {
+        
+        #grid-container {
+            width: 78%;
+            margin: auto;
+            margin-top: 80px;
+            grid-template-columns: repeat(1, 1fr);
+    
+        }
+    
+    }
+
+    @media all and (max-width: 359px ) {
+        
+        #grid-container {
+            width: 88%;
+            margin: auto;
+            margin-top: 50px;
+            grid-template-columns: repeat(1, 1fr);
+    
+        }
+    
+    }
+    </style>
+</head>
+<body>
+    <div id="grid-container">
+        <div class="cards">
+            <div class="flex">
+                <p class="bold">Cappuccino</p>
+                <p class="color">$49</p>
+            </div>
+            <p class="para">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="cards">
+            <div class="flex">
+                <p  class="bold">Americano</p>
+                <p class="color">$49</p>
+            </div>
+            <p class="para">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="cards" >
+            <div class="flex">
+                <p class="bold">Espresso</p>
+                <p class="color">$49</p>
+            </div>
+            <p class="para">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="cards">
+            <div class="flex">
+                <p  class="bold">Macchiato</p>
+                <p class="color">$49</p>
+            </div>
+            <p class="para">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="cards">
+            <div class="flex">
+                <p  class="bold">Mocha</p>
+                <p class="color">$49</p>
+            </div>
+            <p class="para">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="cards">
+            <div class="flex">
+                <p  class="bold">Coffee Latte</p>
+                <p class="color">$49</p>
+            </div>
+            <p class="para">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="cards">
+            <div class="flex">
+                <p  class="bold">Piccolo Latte</p>
+                <p class="color">$49</p>
+            </div>
+            <p class="para">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="cards">
+            <div class="flex" >
+                <p  class="bold">Ristretto</p>
+                <p class="color">$49</p>
+            </div>
+            <p class="para">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="cards">
+            <div class="flex">
+                <p  class="bold">Affogato</p>
+                <p class="color">$49</p>
+            </div>
+            <p class="para">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+    </div>
+</body>
+</html>
